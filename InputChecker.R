@@ -4,8 +4,6 @@ library("openxlsx")
 library("readxl")
 library("stringr")
 
-
-
 version_no <- "Version 0.1"
 options(shiny.maxRequestSize=3000*1024^2)
 
@@ -90,12 +88,8 @@ server <- function(input, output) {
           openxlsx::saveWorkbook(XL_wb,file,overwrite = TRUE)
 
 
-        } else {
-          #Unknown data set
-          id <- showNotification("Unrecognised data set", duration = NULL)
-          #Don't know why it errors after this
-        }
-      } else {id <- showNotification("Missing recorder name", duration = NULL)}
+        } 
+      } 
 
 
     }
