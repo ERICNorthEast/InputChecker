@@ -74,7 +74,7 @@ server <- function(input, output) {
 
           #Format the date
           raw_data$Date <- formatDates(raw_data$Date)
-          browser()
+          
           outputData <- format_and_check_input_data(raw_data,input$locCheck,input$dataformat,input$recordername)
 
           #Output the data
