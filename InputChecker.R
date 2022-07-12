@@ -4,7 +4,7 @@ library("openxlsx")
 library("readxl")
 library("stringr")
 
-version_no <- "Version 0.1"
+version_no <- "Version 0.2"
 options(shiny.maxRequestSize=3000*1024^2)
 
 
